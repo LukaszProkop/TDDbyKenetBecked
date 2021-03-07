@@ -1,7 +1,6 @@
 package com.github.lukaszprokop;
 
-public class Franc {
-    private int amount;
+class Franc extends Money {
 
     public Franc(int amuont) {
         this.amount = amuont;
@@ -9,11 +8,5 @@ public class Franc {
 
     public Franc times(int multiplier) {
         return new Franc(amount * multiplier);
-    }
-
-    @Override
-    public boolean equals(Object object) {
-        Franc franc = (Franc) object;
-        return amount == franc.amount;
     }
 }
