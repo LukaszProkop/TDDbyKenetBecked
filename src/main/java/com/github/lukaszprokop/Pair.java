@@ -14,7 +14,7 @@ public class Pair {
     @Override
     public boolean equals(Object o) {
         Pair pair = (Pair) o;
-        return Objects.equals(from, pair.from) && Objects.equals(to, pair.to);
+        return from.equals(pair.from) && to.equals(pair.to);
     }
 
     @Override

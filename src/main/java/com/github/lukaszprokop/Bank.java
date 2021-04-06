@@ -15,7 +15,6 @@ class Bank {
 
     int rate(String from, String to){
         if (from.equals(to)) return 1;
-        Integer rate = rates.get(new Pair(from, to));
-        return rate;
+        return rates.get(new Pair(from, to));
     }
 }
